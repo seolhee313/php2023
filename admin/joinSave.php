@@ -23,7 +23,7 @@
                 <img src="../assets/img/adminAgree.png" alt="회원가입 이미지">
             </picture>
             <p class="intro__text">
-                회원가입을 해주시면 다양한 정보를 자유롭게 볼 수 있습니다..
+                회원가입을 해주시면 다양한 정보를 자유롭게 볼 수 있습니다.
             </p>
         </div>
         <!-- intro__inner -->
