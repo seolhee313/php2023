@@ -127,6 +127,17 @@ body.windows {
     text-align: center;
     cursor: pointer;
 }
+.btnStyle4 {
+    display: inline-block;
+    padding: 0.8em 2em;
+    margin: 0 0.5em;
+    background-color: var(--color__black);
+    color: var(--color__white);
+    border-radius: 100px;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+}
 
 /* Input Style */
 .inputStyle {
@@ -134,6 +145,14 @@ body.windows {
     width: 100%;
     border-radius: 5px;
     padding: 1em 2em;
+    border: 0;
+    font-weight: 300;
+}
+.inputStyle2 {
+    width: 40%;
+    background-color: #ffffff;
+    border-radius: 100px;
+    padding: 0.8em 2em;
     border: 0;
     font-weight: 300;
 }
