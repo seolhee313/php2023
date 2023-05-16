@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP 블로그 만들기</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+    
+</head>
+<body class="gray">
+    
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+
+    <header id="header">
+        <div class="header__inner container">
+            <div class="left">
+                <a href="../index.html" class="star">
+                    <span class="blind">메인으로</span>
+                </a>
+            </div>
+            <h1 class="logo">
+                <a href="main.html">SeolHee Blog</a>
+            </h1>
+            <div class="right">
+                <ul>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="nav__inner">
+            <ul>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="board.html">게시판</a></li>
+                <li><a href="blog.html">블로그</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+
+    <main id="main"  class="container">
+        <div class="blog__title">
+            <span class="cate">카테고리 제목</span>
+            <h2 class="title">블로그 게시글 타이틀</h2>
+            <div class="info">
+                <span class="author">글쓴이</span>
+                <span class="date">2023-05-16</span>
+                <div class="modify">
+                    <a href="#">수정</a> 
+                    <a href="#">삭제</a> 
+                </div>
+            </div>
+        </div>
+        <!-- blog__title -->
+
+        <div class="blog__inner">
+            <div class="left mt100">
+                <div class="blog__contents">
+                    <h3>블로그 제목</h3>
+                    <p>블로그 내용입니다.</p>
+                    <p>블로그 내용입니다</p>
+                    <p>블로그 내용입니다</p>
+                    <p>블로그 내용입니다</p>
+                    <p>블로그 내용입니다</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="blog__aside">
+                    <div class="intro">
+                        <picture class="img">
+                            <source srcset="assets/img/intro.png, assets/img/intro01.png, assets/img/intro01@2x.png 2x, assets/img/intro01@3x.png 3x" />
+                            <img src="assets/img/intro.png" alt="소개이미지">
+                        </picture> 
+                        <p class="text">
+                            노력과 열정은 결국 좋은 결과를 가져온다고 믿습니다.
+                        </p>
+                    </div>
+                    <div class="cate">
+                        <h4>카테고리</h4>
+                    </div>
+                    <div class="cate">
+                        <h4>최신 글</h4>
+                    </div>
+                    <div class="cate">
+                        <h4>인기 글</h4>
+                    </div>
+                    <div class="cate">
+                        <h4>최신 댓글</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- blog__inner -->
+
+        <div class="blog__article">
+            <h3>관련글</h3>
+            <div class="cards__inner col4 line0">
+                <div class="card">
+                    <figure class="card__img">
+                        <source srcset="assets/img/blog01.jpg, assets/img/blog01@2x.jpg 2x, assets/img/blog01@3x.jpg 3x" />
+                        <a href="#" class="more"><img src="assets/img/blog01-min.jpg" alt=""></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>코딩의 기초</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card__img">
+                        <source srcset="assets/img/blog02.jpg, assets/img/blog02@2x.jpg 2x, assets/img/blog02@3x.jpg 3x" />
+                        <a href="#" class="more"><img src="assets/img/blog02-min.jpg" alt=""></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>코딩 팁 및 트릭</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card__img">
+                        <source srcset="assets/img/blog03.jpg, assets/img/blog03@2x.jpg 2x, assets/img/blog03@3x.jpg 3x" />
+                        <a href="#" class="more"><img src="assets/img/blog03-min.jpg" alt=""></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>코딩 최신 트렌드</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card__img">
+                        <source srcset="assets/img/blog04.jpg, assets/img/blog04@2x.jpg 2x, assets/img/blog04@3x.jpg 3x" />
+                        <a href="#" class="more"><img src="assets/img/blog04-min.jpg" alt=""></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>자바스크립트</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // blog__article -->
+
+        <div class="blog__comment">
+            <h3>댓글쓰기</h3>
+            <div>
+
+            </div>
+        </div>
+        <!-- blog__comment -->
+    </main>
+    <!-- //main -->
+
+    <footer id="footer">
+        <div class="footer__inner btStyle mb100 container">
+            <div>Copyright © 2023 SeolHee</div>
+            <div>blog by SeolHee</div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>

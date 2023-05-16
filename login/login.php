@@ -27,11 +27,11 @@
                     <fieldset>
                         <legend class="blind">로그인 영역</legend>
                         <div>
-                            <label for="youEmail" class="blind" class="required">이메일</label>
+                            <label for="youEmail" class="blind required">이메일</label>
                             <input type="email" id="youEmail" name="youEmail" class="inputStyle" placeholder="이메일" required>
                         </div>
                         <div>
-                            <label for="youPass" class="blind" class="required">비밀번호</label>
+                            <label for="youPass" class="blind required">비밀번호</label>
                             <input type="password" id="youPass" name="youPass" class="inputStyle" placeholder="비밀번호" required>
                         </div>
                         <button type="submit" class="btnStyle2 mt20">로그인</button>

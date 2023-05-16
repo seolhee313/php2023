@@ -1,5 +1,6 @@
 <?php
     include "../connect/connect.php";
+    
     $type = $_POST['type'];
     $jsonResult = "bad";
     if( $type == "isEmailCheck"){
