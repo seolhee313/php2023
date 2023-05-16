@@ -159,6 +159,7 @@ body.windows {
     font-size: 1rem;
     text-align: center;
     cursor: pointer;
+    transition: all 0.3s;
 }
 .btnStyle5 {
     border: 1px solid var(--color__black);

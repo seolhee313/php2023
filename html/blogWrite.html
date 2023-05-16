@@ -72,23 +72,32 @@
             </div>
         </div>
         <div class="blog__inner">
-            <div class="left">
-                <div class="blog__write">
-                    <form action="#" name="#" method="post">
-                        <fieldset>
-                            <legend class="blind">게시글 작성하기</legend>
-                            <div>
-                                <label for="blogTitle">제목</label>
-                                <input type="text" id="blogTitle" name="blogTitle" class="inputStyle">
-                            </div>
-                            <div>
-                                <label for="blogContents">내용</label>
-                                <div id="editor"></div>
-                            </div>
-                            <button type="submit" class="btnStyle3">저장하기</button>
-                        </fieldset>
-                    </form>
-                </div>
+            <div class="blog__write">
+                <form action="#" name="#" method="post">
+                    <fieldset>
+                        <legend class="blind">게시글 작성하기</legend>
+                        <div>
+                            <label for="blogCategory">카테고리</label>
+                            <select name="blogCategory" id="blogCategory">
+                                <option value="javascript">javascript</option>
+                                <option value="jquery">jquery</option>
+                                <option value="react">react</option>
+                                <option value="html">html</option>
+                                <option value="css">css</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="blogTitle">제목</label>
+                            <input type="text" id="blogTitle" name="blogTitle" class="inputStyle">
+                        </div>
+                        <div>
+                            <label for="blogContents">내용</label>
+                            <!-- <textarea name="blogContents" id="blogContents" class="inputStyle" rows="20"></textarea> -->
+                            <div id="editor"></div>
+                        </div>
+                        <button type="submit" class="btnStyle3">저장하기</button>
+                    </fieldset>
+                </form>
             </div>
         </div>
     </main>
