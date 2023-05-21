@@ -41,8 +41,9 @@
 .blog__aside .intro .text {
     margin-top: 20px;
     font-weight: 300;
-
 }
+
+/* cate */
 .blog__aside .cate {
     border-top: 1px solid #888;
     margin-bottom: 50px;
@@ -53,6 +54,66 @@
     color: var(--color__white);
     padding: 0 4px 2px 4px;
 }
+.blog__aside .cate ul {
+    margin: 10px 0;
+}
+.blog__aside .cate ul li a {
+    line-height: 1.6;
+}
+.blog__aside .cate ul li:hover a {
+    text-decoration: underline;
+    text-underline-position: under;
+}
+.blog__aside .cate ul li {
+    position: relative;
+    padding-left: 20px;
+}
+.blog__aside .cate ul li::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--color__black);
+    left: 0;
+    top: 8px;
+    position: absolute;
+    transition: all 0.4s;
+}
+.blog__aside .cate ul li:hover::before {
+    border-radius: 50%;
+    background-color: #7bbdf8;
+}
+
+/* latest */
+.blog__aside .cate ul.latest-post-list {
+    margin: 10px 0;
+}
+.blog__aside .cate ul.latest-post-list li {
+  position: relative;
+  padding-left: 20px;
+}
+.blog__aside .cate ul.latest-post-list li::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: var(--color__black);
+  left: 0;
+  top: 8px;
+  position: absolute;
+  transition: all 0.4s;
+}
+.blog__aside .cate ul.latest-post-list li:hover::before {
+    border-radius: 50%;
+    background-color: #7bbdf8;
+}
+.blog__aside .cate ul.latest-post-list li a {
+  line-height: 1.6;
+}
+.blog__aside .cate ul.latest-post-list li:hover a {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* blog__search */
 .blog__search {
     padding: 100px 0 70px;
     text-align: center;
@@ -200,6 +261,21 @@
 }
 .cards__inner.col6 > .card {
     width: 15.6666%;
+}
+.cards__inner.row {
+    margin-top: -100px;
+}
+.cards__inner.row > .card {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.cards__inner.row > .card .card__img  {
+    width: 20%;
+}
+.cards__inner.row > .card .card__title  {
+    width: 77%;
 }
 .card__img {
     filter: saturate(0);

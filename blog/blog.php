@@ -2,9 +2,9 @@
     include "../connect/connect.php";
     include "../connect/session.php";
 
-    echo "<pre>";
-    var_dump($_SESSION);
-    echo "</pre>";
+    // echo "<pre>";
+    // var_dump($_SESSION);
+    // echo "</pre>";
 ?>
 
 <!DOCTYPE html>
@@ -45,7 +45,7 @@
                 <div class="blog__wrap">
                     <h2>All Posts</h2>
                     <div class="cards__inner col3 line3">
-                        <div class="card">
+                        <!-- <div class="card">
                             <figure class="card__img">
                                 <source srcset="../assets/img/blog01-min.jpg, ../assets/img/blog01-min.jpg, ../assets/img/blog01-min@2x.jgp 2x, ../assets/img/blog01-min@3x.jgp 3x" />
                                 <img src="../assets/img/blog01-min.jpg" alt="소개이미지">
@@ -170,32 +170,45 @@
                                 <span class="author">천설희</span>
                                 <span class="date">2023.04.03</span>
                             </div>
-                        </div>
+                        </div> -->
+<?php
+    $sql = "SELECT * FROM blog WHERE blogDelete = 0 ORDER BY blogID DESC";
+    $result = $connect -> query($sql);
+?>
+
+<?php foreach($result as $blog){ ?>
+    <div class="card">
+        <figure class="card__img">
+            <a href="blogView.php?blogID=<?=$blog['blogID']?>">
+                <img src="../assets/blog/<?=$blog['blogImgFile']?>" alt="<?=$blog['blogTitle']?>">
+            </a>
+        </figure>
+        <div class="card__title">
+            <h3><?=$blog['blogTitle']?></h3>
+            <p><?=$blog['blogContents']?></p>
+        </div>
+        <div class="card__info">
+            <span class="author">천설희</span>
+            <span class="date">2023.04.03</span>
+            <!-- <a href="#" class="more">더보기</a> -->
+        </div>
+    </div>
+<?php } ?>
                     </div>
                 </div>
             </div>
             <div class="right">
                 <div class="blog__aside">
-                    <div class="intro">
-                        <picture class="img">
-                            <source srcset="../assets/img/intro.png, ../assets/img/intro01.png, ../assets/img/intro01@2x.png 2x, ../assets/img/intro01@3x.png 3x" />
-                            <img src="../assets/img/intro.png" alt="소개이미지">
-                        </picture> 
-                        <p class="text">
-                            노력과 열정은 결국 좋은 결과를 가져온다고 믿습니다.
-                        </p>
-                    </div>
-                    <div class="cate">
-                        <h4>카테고리</h4>
-                    </div>
-                    <div class="cate">
-                        <h4>최신 글</h4>
-                    </div>
-                    <div class="cate">
-                        <h4>인기 글</h4>
-                    </div>
-                    <div class="cate">
-                        <h4>최신 댓글</h4>
+                    <div class="blog__aside">
+                        <?php include "../include/blogTitle.php" ?>
+                        
+                        <?php include "../include/blogCate.php" ?>
+
+                        <?php include "../include/blogLatest.php" ?>
+
+                        <?php include "../include/blogPopular.php" ?>
+
+                        <?php include "../include/blogComment.php" ?>
                     </div>
                 </div>
             </div>
