@@ -11,7 +11,6 @@
             $relatedBlogTitle = $relatedRow['blogTitle'];
             $relatedBlogImgFile = $relatedRow['blogImgFile'];
 
-            // 이미지 파일 경로를 동적으로 설정
             $imagePath = "../assets/blog/".$relatedBlogImgFile;
             $imageSrcset = $imagePath.", ".$imagePath."@2x.jpg 2x, ".$imagePath."@3x.jpg 3x";
 
